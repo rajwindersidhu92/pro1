@@ -1,15 +1,19 @@
 package com.lambton;
 
-public class example1 {
+public class Example1 {
     public static void main(String[] args)
-    { int y=100;
-      int a[] = new int[]{};
-      for(int i =0; i<5 ; i++){
-          a[i]= y+a[i-1];
+    { int sum=0;
+      int a[] = new int[5];
+        a[0] =100;
+        a[1] =200;
+        a[2] =300;
+        a[3] =400;
+        a[4] =500;
+      for (int i = 0;i<a.length; i++){
+          System.out.println("a[]:"+a[i]);
+          sum = sum + a[i];
       }
-        for(int i =0; i<5 ; i++){
-            System.out.println(a[i]);
-        }
+      System.out.println("sum = "+sum);
 
     }
 }
